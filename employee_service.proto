@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.sneha.employeeservice";
+
+message Employee{
+  int32 name =1;
+  string email =2;
+  string id= 3;
+}
+
+message EmployeeRegisterRequest{
+  string name = 1;
+  string email = 2;
+}
+
+message EmployeeRegisterResponse{
+  string  id = 1;
+}
+
+message EmployeeValidationRequest{
+  string id =1;
+}
+
+message EmployeeValidationResponse{
+  optional bool isValid = 1;
+}
