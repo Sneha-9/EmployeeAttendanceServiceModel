@@ -12,6 +12,7 @@ message Employee{
 message EmployeeRegisterRequest{
   string name = 1;
   string email = 2;
+  string department = 3;
 }
 
 message EmployeeRegisterResponse{
